@@ -1,4 +1,4 @@
-[# 88. Merge Sorted Arrays]{https://leetcode.com/problems/merge-sorted-array/description/}
+[# 88. Merge Sorted Arrays](https://leetcode.com/problems/merge-sorted-array/description/)
 
 
 ## Problem Description
