@@ -2,7 +2,6 @@
 
 ## Problem Description
 
-```markdown
 Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. 
 The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.
 
@@ -11,7 +10,6 @@ you need to do the following things:
 
 Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums.
 Return `k`.
-```
 
 ### Example 1:
 ```plaintext
@@ -49,15 +47,16 @@ def removeElement(self, nums, val):
 ```
 
 ## Explanation
-```plaintext
 Complexity:
+
 Time: O(n)
+
 Space: O(1)
+
 
 Let the variable `count` be a pointer for swappable element and count for non-val-equal elements.
 If we swap non-val-equal elements with "swappable" element (nums[count]) and increment the count,
 then we will end up with a list that has val-equal elements clustered in the back of the list.
-```
 
 ## Results
 

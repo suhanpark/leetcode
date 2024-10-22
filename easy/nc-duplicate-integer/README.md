@@ -3,9 +3,7 @@
 
 ## Problem Description
 
-```markdown
 Given an integer array nums, return `true` if any value appears more than once in the array, otherwise return `false`.
-```
 
 ### Example 1:
 ```plaintext
@@ -55,9 +53,10 @@ class Solution:
 ```
 
 ## Explanation
-```plaintext
 Complexity
+
 Time: O(n)
+
 Space: O(n)
 
 Solution 1 is very intuitive. When casting a list to a set, the duplicates are not being added to the set.
@@ -65,9 +64,10 @@ Therefore if the length of the set and original list are the same, then the list
 Else, it has duplicates. This operation takes O(n) time due to casting list to set and O(n) space due to the set.
 
 Complexity
+
 Time: O(n)
+
 Space: O(n)
 
 Solution 2 is intuitive as well. We want to keep on recording the seen numbers, so when we see a number that was seen (duplicate) we can return True. Otherwise, False. Dictionary is chosen because of its O(1) time for `in` operation.
 This operation takes O(n) time due to looping over all elements in the list and O(n) space due to the dictionary.
-```
