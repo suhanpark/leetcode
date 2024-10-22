@@ -49,6 +49,7 @@ def removeElement(self, nums, val):
 ```
 
 ## Explanation
+```plaintext
 Complexity:
 Time: O(n)
 Space: O(1)
@@ -56,7 +57,7 @@ Space: O(1)
 Let the variable `count` be a pointer for swappable element and count for non-val-equal elements.
 If we swap non-val-equal elements with "swappable" element (nums[count]) and increment the count,
 then we will end up with a list that has val-equal elements clustered in the back of the list.
-
+```
 
 ## Results
 

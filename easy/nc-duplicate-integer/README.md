@@ -55,6 +55,7 @@ class Solution:
 ```
 
 ## Explanation
+```plaintext
 Complexity
 Time: O(n)
 Space: O(n)
@@ -69,3 +70,4 @@ Space: O(n)
 
 Solution 2 is intuitive as well. We want to keep on recording the seen numbers, so when we see a number that was seen (duplicate) we can return True. Otherwise, False. Dictionary is chosen because of its O(1) time for `in` operation.
 This operation takes O(n) time due to looping over all elements in the list and O(n) space due to the dictionary.
+```

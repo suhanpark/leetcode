@@ -61,6 +61,7 @@ def merge(nums1, m, nums2, n):
 ```
 
 ## Explanation
+```plaintext
 Complexity
 Time: O(n)
 Space: O(1)
@@ -81,7 +82,7 @@ when the number in nums1 is smaller or equal to nums2 (it will be since it's 0).
 Then we insert the number from nums2 and decrement p3 to move left and point smaller element.
 
 Every iteration we decrement p2 to move left and point smaller element in nums1.
-
+```
 
 ## Results
 
