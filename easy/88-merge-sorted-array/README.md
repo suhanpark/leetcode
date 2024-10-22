@@ -61,6 +61,10 @@ def merge(nums1, m, nums2, n):
 ```
 
 ## Explanation
+Complexity
+Time: O(n)
+Space: O(1)
+
 Consider the 3 pointers that point to
   1. End of nums1 (p1)
   2. End of where original values of nums1 are (p2)
