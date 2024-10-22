@@ -27,29 +27,27 @@ Output: false
 ```python
 # solution.py
 
-class Solution:
-    # solution 1
-    def hasDuplicate(self, nums: List[int]) -> bool:
-        nums_s = set(nums)
-        return len(nums) != len(nums_s)
+# solution 1
+def hasDuplicate(self, nums: List[int]) -> bool:
+    nums_s = set(nums)
+    return len(nums) != len(nums_s)
 
 ```
 
 ```python
 # solution.py
 
-class Solution:
-    # solution 2
-    def hasDuplicate(self, nums: List[int]) -> bool:
-        seen = dict()
+# solution 2
+def hasDuplicate(self, nums: List[int]) -> bool:
+    seen = dict()
 
-        for n in nums:
-            if n in seen:
-                return True
-            else:
-                seen[n] = 0
-            
-        return False
+    for n in nums:
+        if n in seen:
+            return True
+        else:
+            seen[n] = 0
+        
+    return False
 ```
 
 ## Explanation
