@@ -1,4 +1,4 @@
-# [NC. Duplicate Integers](https://neetcode.io/problems/duplicate-integer)
+# [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/description/)
 
 
 ## Problem Description
@@ -28,7 +28,7 @@ Output: false
 ```python
 # solution.py
 
-def isAnagram(self, s: str, t: str) -> bool:
+def isAnagram(self, s, t):
     if len(s) != len(t):
         return False
     
@@ -46,7 +46,6 @@ def isAnagram(self, s: str, t: str) -> bool:
             td[t[i]] = 1
         
     return sd == td 
-
 ```
 
 ## Explanation
@@ -58,3 +57,13 @@ Space: O(2n) -> O(n)
 
 Consider anagram can have different order of characters, but have to contain the same characters.
 We want to record how many each character is in each list and compare the dictionaries to show the two are anagram.
+
+## Results
+
+The following graphs show the performance of the solution:
+
+### Time Complexity
+![Time Complexity](./time.png)
+
+### Memory Usage
+![Memory Usage](./space.png)

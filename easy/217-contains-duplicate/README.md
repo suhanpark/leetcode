@@ -1,4 +1,4 @@
-# [NC. Duplicate Integers](https://neetcode.io/problems/duplicate-integer)
+# [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)
 
 
 ## Problem Description
@@ -28,17 +28,16 @@ Output: false
 # solution.py
 
 # solution 1
-def hasDuplicate(self, nums: List[int]) -> bool:
+def containsDuplicate1(self, nums):        
     nums_s = set(nums)
     return len(nums) != len(nums_s)
-
 ```
 
 ```python
 # solution.py
 
 # solution 2
-def hasDuplicate(self, nums: List[int]) -> bool:
+def containsDuplicate2(self, nums):   
     seen = dict()
 
     for n in nums:
@@ -69,3 +68,13 @@ Space: O(n)
 
 Solution 2 is intuitive as well. We want to keep on recording the seen numbers, so when we see a number that was seen (duplicate) we can return True. Otherwise, False. Dictionary is chosen because of its O(1) time for `in` operation.
 This operation takes O(n) time due to looping over all elements in the list and O(n) space due to the dictionary.
+
+## Results
+
+The following graphs show the performance of the solution:
+
+### Time Complexity
+![Time Complexity](./time.png)
+
+### Memory Usage
+![Memory Usage](./space.png)

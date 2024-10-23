@@ -1,13 +1,9 @@
-from typing import List
-
-class Solution:
-    def hasDuplicate(self, nums: List[int]) -> bool:
-        # solution 1
+class Solution(object):
+    def containsDuplicate1(self, nums):        # solution 1
         nums_s = set(nums)
         return len(nums) != len(nums_s)
     
-    def hasDuplicate2(self, nums: List[int]) -> bool:
-        # solution 2
+    def containsDuplicate2(self, nums):        # solution 2
         seen = dict()
 
         for n in nums:
