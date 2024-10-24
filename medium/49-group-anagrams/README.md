@@ -1,34 +1,27 @@
-# [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/description/)
-
+# [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/)
 
 ## Problem Description
 
-Given an array of strings `strs`, group the anagrams together. You can return the answer in any order.
+Given an integer array `nums` and an integer `k`, return the `k` most frequent elements. You may return the answer in any order.
 
 ### Example 1:
 ```plaintext
-Input: strs = ["eat","tea","tan","ate","nat","bat"]
-Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+Input: nums = [1,1,1,2,2,3], k = 2
+Output: [1,2]
 ```
 
 ### Example 2:
 ```plaintext
-Input: strs = [""]
-Output: [[""]]
+Input: nums = [1], k = 1
+Output: [1]
 ```
-
-### Example 3:
-```plaintext
-Input: strs = ["a"]
-Output: [["a"]]
-```
-
 
 ### Constraints:
-- `1 <= strs.length <= 10^4`
-- `0 <= strs[i].length <= 100`
-- `strs[i]` consists of lowercase English letters.
-
+- `1 <= nums.length <= 10^4`
+- `-10^4 <= nums[i] <= 10^4`
+- `k` is in the range `[1, the number of unique elements in the array]`.
+- It is guaranteed that the answer is unique.
+  
 ## Solution
 
 ```python
