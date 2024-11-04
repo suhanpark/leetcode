@@ -15,7 +15,6 @@ Input: p = [1,2,3], q = [1,2,3]
 Output: true
 
 ```
-![Description 2](./desc2.png)
 
 ### Example 2:
 ```plaintext
