@@ -7,7 +7,7 @@ Given the roots of two binary trees `p` and `q`, write a function to check if th
 
 Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
 
-![Description 1](./desc1.jpg)
+![Description 1](./desc1.png)
 
 ### Example 1:
 ```plaintext
@@ -15,14 +15,14 @@ Input: p = [1,2,3], q = [1,2,3]
 Output: true
 
 ```
-![Description 2](./desc2.jpg)
+![Description 2](./desc2.png)
 
 ### Example 2:
 ```plaintext
 Input: p = [1,2], q = [1,null,2]
 Output: false
 ```
-![Description 3](./desc3.jpg)
+![Description 3](./desc3.png)
 
 ### Example 3:
 ```plaintext
